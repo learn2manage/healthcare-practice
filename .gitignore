@@ -31,6 +31,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# macOS
+.DS_Store
+*.pem
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+expo-env.d.ts
+.env
+*.ttf
+*.mp4
+*.mov
