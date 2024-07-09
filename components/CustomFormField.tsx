@@ -10,14 +10,11 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Control } from 'react-hook-form';
-import { FormFieldType } from '../forms/PatientForm';
+import { FormFieldType } from './forms/PatientForm';
 import Image from 'next/image';
 import PhoneInput from 'react-phone-number-input/input';
 import { E164Number } from 'libphonenumber-js/core';
 import PhoneInputWithCountrySelect from 'react-phone-number-input';
-interface HomeFormValues {
-    username: string;
-}
 
 interface CustomerProps {
     control: Control<any>;
@@ -85,7 +82,7 @@ const RenderField = ({
     }
 };
 
-const CustomerFormField = (props: CustomerProps) => {
+const CustomFormField = (props: CustomerProps) => {
     const { control, fieldType, name, label } = props;
     return (
         <FormField
@@ -106,4 +103,4 @@ const CustomerFormField = (props: CustomerProps) => {
     );
 };
 
-export default CustomerFormField;
+export default CustomFormField;
