@@ -40,6 +40,7 @@ yarn-error.log*
 next-env.d.ts
 expo-env.d.ts
 .env
+.env.local
 *.ttf
 *.mp4
 *.mov
